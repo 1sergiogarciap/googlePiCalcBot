@@ -1,5 +1,7 @@
 let numbers = [];
 
+dateChange = new Date();
+
 const Observe = (sel, opt, cb) => {
     const Obs = new MutationObserver((m) => [...m].forEach(cb));
     document.querySelectorAll(sel).forEach(el => Obs.observe(el, opt));
@@ -42,4 +44,4 @@ function keyboardObserver(){
 
 document.querySelector('.t6VgP').click()
 
-setTimeout(() =>{ keyboardObserver() }, 5 00)
+setTimeout(() =>{ keyboardObserver() }, 500)
